@@ -464,7 +464,7 @@ a:focus {
 .banner {
   position: relative;
   overflow: hidden;
-  background: #fff;
+  /* background: #fff; */
   background: url("../images/bg/slider-bg-1.jpg") no-repeat;
   background-size: cover;
   min-height: 550px;
@@ -507,7 +507,7 @@ a:focus {
   }
   .banner {
     min-height: 450px;
-    background: #fff !important;
+    /* background: #fff !important; */
   }
 }
 
@@ -518,7 +518,7 @@ a:focus {
   }
   .banner {
     min-height: 450px;
-    background: #fff !important;
+    /* background: #fff !important; */
   }
 }
 
@@ -528,13 +528,13 @@ a:focus {
     line-height: 70px;
   }
   .banner {
-    background: #fff !important;
+    /* background: #fff !important; */
   }
 }
 
 @media (max-width: 992px) {
   .banner {
-    background: #fff !important;
+    /* background: #fff !important; */
   }
 }
 
