@@ -38,7 +38,7 @@ export default function handler(req, res) {
       // Mail options
       const mailOptions = {
         from: 'medifybill@gmail.com',
-        to: 'medifybill@gmail.com', // The recipient's email address
+        to: 'info@medifybill.com', // The recipient's email address
         subject: 'New Appointment Request',
         text: `
           New appointment request received:
