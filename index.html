@@ -343,13 +343,117 @@
 </section>
 <br>
 
-	<div class="row justify-content-center">
-				<h2 class="red-text" style="color: rgb(41,64,107,255);">Book Appointment</h2>
-			
+	<section class="section appoinment">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-6 ">
+					<div class="appoinment-content">
+						<img src="images/about/img-3.jpg" alt="" class="img-fluid">
+						<div class="emergency">
+							<h2 class="text-lg"><i class="icofont-phone-circle text-lg"></i>+23 345 67980</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-10 ">
+					<div class="appoinment-wrap mt-5 mt-lg-0">
+						<h2 class="mb-2 title-color">Book appoinment</h2><br>
+						<form id="appointment-form" class="appointment-form" method="POST" action="/api/contact">
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="form-group">
+										<input name="name" id="name" type="text" class="form-control" placeholder="Full Name" required>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="form-group">
+										<input name="email" id="email" type="email" class="form-control" placeholder="Email Address" required>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="form-group">
+										<input name="phone" id="phone" type="number" class="form-control" placeholder="Phone Number" required>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="form-group">
+										<select name="department" class="form-control" id="department" required>
+											<option value="">Select Speciality</option>
+											<option value="Cardiology">Cardiology</option>
+											<option value="Dermatology">Dermatology</option>
+											<option value="Pediatrics">Pediatrics</option>
+											<option value="General Medicine">General Medicine</option>
+											<option value="Orthopedics">Orthopedics</option>
+											<option value="Neurology">Neurology</option>
+											<option value="Oncology">Oncology</option>
+											<option value="Psychiatry">Psychiatry</option>
+											<option value="Radiology">Radiology</option>
+											<option value="Gastroenterology">Gastroenterology</option>
+											<option value="Endocrinology">Endocrinology</option>
+											<option value="Urology">Urology</option>
+											<option value="Nephrology">Nephrology</option>
+											<option value="Pulmonology">Pulmonology</option>
+											<option value="Hematology">Hematology</option>
+											<option value="Immunology">Immunology</option>
+											<option value="Ophthalmology">Ophthalmology</option>
+											<option value="Obstetrics and Gynecology">Obstetrics and Gynecology</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="form-group">
+										<select name="service" class="form-control" id="service" required>
+											<option value="">Select Service</option>
+											<option value="Consultation">Consultation</option>
+											<option value="Check-up">Check-up</option>
+											<option value="Surgery">Surgery</option>
+											<option value="Emergency">Emergency</option>
+											<option value="Laboratory Tests">Laboratory Tests</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="form-group">
+										<select name="state" class="form-control" id="state" required>
+											<option value="">Select State</option>
+											<option value="California">California</option>
+											<option value="Texas">Texas</option>
+											<option value="Florida">Florida</option>
+											<option value="New York">New York</option>
+											<option value="Illinois">Illinois</option>
+											<option value="Georgia">Georgia</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="form-group">
+										<select name="challenges" class="form-control" id="challenges" required>
+											<option value="">Challenges You are Facing</option>
+											<option value="California">California</option>
+											<option value="Texas">Texas</option>
+											<option value="Florida">Florida</option>
+											<option value="New York">New York</option>
+											<option value="Illinois">Illinois</option>
+											<option value="Georgia">Georgia</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="form-group">
+										<input name="estimatedCollection" id="estimatedCollection" type="number" class="form-control" placeholder="$ Estimated Monthly Amount/Collection" required>
+									</div>
+								</div>
+							</div>
+							<div class="form-group-3 mb-4">
+								<textarea name="message" id="message" class="form-control" rows="6" placeholder="Type your message here:" required></textarea>
+							</div>
+							<button type="submit" class="btn btn-main btn-round-full">Make Appointment</button>
+						</form>
+				</div>
+				</div>
+			</div>
 		</div>
-	</div>
+	</section>
 	
-<script type="text/javascript" src="https://form.jotform.com/jsform/243393231347455"></script>
 <!-- <section class="section appoinment">
 	<div class="container">
 		<div class="row align-items-center">
@@ -604,7 +708,7 @@
 					<ul class="list-inline footer-socials mt-4">
 						<li class="list-inline-item"><a href="https://www.facebook.com/medifybill"><i class="icofont-facebook"></i></a></li>
 						<li class="list-inline-item"><a href="https://twitter.com/medifybill"><i class="icofont-twitter"></i></a></li>
-						<li class="list-inline-item"><a href="https://www.pinterest.com/medifybill"><i class="icofont-linkedin"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.linkedin.com/medifybill"><i class="icofont-linkedin"></i></a></li>
 					</ul>
 				</div>
 			</div>
