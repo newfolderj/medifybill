@@ -150,7 +150,7 @@
                   <div class="feature-icon mb-3">
                     <i class="icofont-support text-lg"></i>
                   </div>
-                   <span class="h3">Call for an Emergency Service!</span>
+                   <span class="h3">Need Immediate Assistance? Call Now!</span>
                     <h2 class="text-color mt-3">(307) 443-6330</h2>
                 </div>
             </div>
@@ -158,7 +158,7 @@
             <div class="col-lg-8">
                  <div class="appoinment-wrap mt-5 mt-lg-0 pl-lg-5">
                   <h2 class="mb-2 title-color">Book an appoinment</h2>
-                  <p class="mb-4">Mollitia dicta commodi est recusandae iste, natus eum asperiores corrupti qui velit . Iste dolorum atque similique praesentium soluta.</p>
+                 <br>
                   <form id="appointment-form" class="appointment-form" method="POST" action="/api/contact">
                       <div class="row">
                           <div class="col-lg-6">
@@ -240,10 +240,15 @@
                               </div>
                           </div>
                           <div class="col-lg-6">
-                              <div class="form-group">
-                                  <input name="estimatedCollection" id="estimatedCollection" type="number" class="form-control" placeholder="$ Estimated Monthly Amount/Collection" required>
-                              </div>
-                          </div>
+                            <div class="form-group">
+                                <select name="estimatedCollection" class="form-control" id="challenges" >
+                                    <option value="">$ Estimated Collection</option>
+                                     <option value="Less 50K $">Less 50K $</option>
+                                      <option value="More Than 50K$ and Less Than 100K$">More Than 50K$ and Less Than 100K$</option>
+                                      <option value="More Than 100K$">More Than 100K$</option>
+                                </select>
+                            </div>
+                        </div>
                       </div>
                       <div class="form-group-3 mb-4">
                           <textarea name="message" id="message" class="form-control" rows="6" placeholder="Type your message here:" required></textarea>

@@ -234,7 +234,7 @@
 			  <div class="feature-icon mb-3">
 				<i class="icofont-support text-lg"></i>
 			  </div>
-			   <span class="h3">Call for an Emergency Service!</span>
+			   <span class="h3">Need Immediate Assistacnce? Call Now!</span>
 				<h2 class="text-color mt-3">(307) 443-6330</h2>
 			</div>
 		</div>
@@ -242,7 +242,6 @@
 		<div class="col-lg-8">
 			 <div class="appoinment-wrap mt-5 mt-lg-0 pl-lg-5">
 			  <h2 class="mb-2 title-color">Drop Your Queries !</h2>
-			  <p class="mb-4">Mollitia dicta commodi est recusandae iste, natus eum asperiores corrupti qui velit . Iste dolorum atque similique praesentium soluta.</p>
 			  <form id="appointment-form" class="appointment-form" method="POST" action="/api/contact">
 				  <div class="row">
 					  <div class="col-lg-6">
@@ -288,12 +287,13 @@
 					  <div class="col-lg-6">
 						  <div class="form-group">
 							  <select name="service" class="form-control" id="service" required>
-								  <option value="">Select Service</option>
+								<option value="">Select Service</option>
+								  <option value="Billing">Billing</option>
+								  <option value="Coding">Coding</option>
 								  <option value="Consultation">Consultation</option>
-								  <option value="Check-up">Check-up</option>
-								  <option value="Surgery">Surgery</option>
-								  <option value="Emergency">Emergency</option>
-								  <option value="Laboratory Tests">Laboratory Tests</option>
+								  <option value="Claim Processing">Claim Processing</option>
+								  <option value="Revenue Cycle Management">Revenue Cycle Management</option>
+								  <option value="Denial Management">Denial Management</option>
 							  </select>
 						  </div>
 					  </div>
@@ -301,12 +301,56 @@
 						  <div class="form-group">
 							  <select name="state" class="form-control" id="state" required>
 								  <option value="">Select State</option>
-								  <option value="California">California</option>
-								  <option value="Texas">Texas</option>
-								  <option value="Florida">Florida</option>
-								  <option value="New York">New York</option>
-								  <option value="Illinois">Illinois</option>
-								  <option value="Georgia">Georgia</option>
+								  <option value="AL">Alabama</option>
+								  <option value="AK">Alaska</option>
+								  <option value="AZ">Arizona</option>
+								  <option value="AR">Arkansas</option>
+								  <option value="CA">California</option>
+								  <option value="CO">Colorado</option>
+								  <option value="CT">Connecticut</option>
+								  <option value="DE">Delaware</option>
+								  <option value="FL">Florida</option>
+								  <option value="GA">Georgia</option>
+								  <option value="HI">Hawaii</option>
+								  <option value="ID">Idaho</option>
+								  <option value="IL">Illinois</option>
+								  <option value="IN">Indiana</option>
+								  <option value="IA">Iowa</option>
+								  <option value="KS">Kansas</option>
+								  <option value="KY">Kentucky</option>
+								  <option value="LA">Louisiana</option>
+								  <option value="ME">Maine</option>
+								  <option value="MD">Maryland</option>
+								  <option value="MA">Massachusetts</option>
+								  <option value="MI">Michigan</option>
+								  <option value="MN">Minnesota</option>
+								  <option value="MS">Mississippi</option>
+								  <option value="MO">Missouri</option>
+								  <option value="MT">Montana</option>
+								  <option value="NE">Nebraska</option>
+								  <option value="NV">Nevada</option>
+								  <option value="NH">New Hampshire</option>
+								  <option value="NJ">New Jersey</option>
+								  <option value="NM">New Mexico</option>
+								  <option value="NY">New York</option>
+								  <option value="NC">North Carolina</option>
+								  <option value="ND">North Dakota</option>
+								  <option value="OH">Ohio</option>
+								  <option value="OK">Oklahoma</option>
+								  <option value="OR">Oregon</option>
+								  <option value="PA">Pennsylvania</option>
+								  <option value="RI">Rhode Island</option>
+								  <option value="SC">South Carolina</option>
+								  <option value="SD">South Dakota</option>
+								  <option value="TN">Tennessee</option>
+								  <option value="TX">Texas</option>
+								  <option value="UT">Utah</option>
+								  <option value="VT">Vermont</option>
+								  <option value="VA">Virginia</option>
+								  <option value="WA">Washington</option>
+								  <option value="WV">West Virginia</option>
+								  <option value="WI">Wisconsin</option>
+								  <option value="WY">Wyoming</option>
 							  </select>
 						  </div>
 					  </div>
@@ -314,12 +358,13 @@
 						  <div class="form-group">
 							  <select name="challenges" class="form-control" id="challenges" required>
 								  <option value="">Challenges You are Facing</option>
-								  <option value="California">California</option>
-								  <option value="Texas">Texas</option>
-								  <option value="Florida">Florida</option>
-								  <option value="New York">New York</option>
-								  <option value="Illinois">Illinois</option>
-								  <option value="Georgia">Georgia</option>
+								  <option value="Claim Denials">Claim Denials</option>
+                        			<option value="Coding Errors">Coding Errors</option>
+                      			  <option value="Delayed Payments">Delayed Payments</option>
+                       			 <option value="Revenue Loss">Revenue Loss</option>
+                       			 <option value="Compliance Issues">Compliance Issues</option>
+                      			  <option value="Patient Eligibility Verification">Patient Eligibility Verification</option>
+                      			  <option value="Lack of RCM Expertise">Lack of RCM Expertise</option>
 							  </select>
 						  </div>
 					  </div>
