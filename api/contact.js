@@ -48,15 +48,15 @@ module.exports = (req, res) => {
             const transporter = nodemailer.createTransport({
                 service: 'gmail',
                 auth: {
-                    user: 'your-email@gmail.com', // Use your email
-                    pass: 'your-email-password'   // Use your email password or app password
+                    user: 'medifybill@gmail.com', // Use your email
+                    pass: 'wevn ctmd sndn spoe'   // Use your email password or app password
                 }
             });
 
             // Send the email
             const mailOptions = {
                 from: email,
-                to: 'recipient@example.com', // Recipient email
+                to: 'info@medifybill.com', // Recipient email
                 subject: 'New Appointment Request',
                 html: emailContent
             };
