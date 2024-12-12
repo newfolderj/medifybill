@@ -1,0 +1,17 @@
+{
+    "name": "medifybill-appointments",
+    "version": "1.0.0",
+    "description": "A form that sends appointment requests via email using Nodemailer",
+    "main": "index.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "formidable": "^2.0.1",
+      "nodemailer": "^6.8.0"
+    },
+    "devDependencies": {},
+    "author": "",
+    "license": "ISC"
+  }
+  
