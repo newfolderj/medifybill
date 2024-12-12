@@ -68,7 +68,11 @@ module.exports = (req, res) => {
                     return;
                 }
 
-                res.status(200).json({ message: 'Appointment request sent successfully.' });
+                // Redirect the user to the confirmation page after successful email sending
+                res.writeHead(302, {
+                    Location: 'https://www.medifybill.com/confirmation.html'
+                });
+                res.end();
             });
         });
     } else {
@@ -77,6 +81,87 @@ module.exports = (req, res) => {
 };
 
 
+
+
+/*const nodemailer = require('nodemailer');
+const formidable = require('formidable');
+
+module.exports = (req, res) => {
+    if (req.method === 'POST') {
+        const form = new formidable.IncomingForm();
+
+        form.parse(req, (err, fields, files) => {
+            if (err) {
+                res.status(500).json({ error: 'Something went wrong while processing the form.' });
+                return;
+            }
+
+            // Extract values from the form fields
+            const { 
+                name, 
+                email, 
+                phone, 
+                department, 
+                service, 
+                state, 
+                challenges, 
+                estimatedCollection, 
+                message 
+            } = fields;
+
+            // Validate required fields
+            if (!name || !email || !phone || !department || !service || !state || !challenges || !estimatedCollection || !message) {
+                res.status(400).json({ error: 'All fields are required.' });
+                return;
+            }
+
+            // Create the email content
+            const emailContent = `
+                <h1>New Appointment Request</h1>
+                <p><strong>Name:</strong> ${name}</p>
+                <p><strong>Email:</strong> ${email}</p>
+                <p><strong>Phone:</strong> ${phone}</p>
+                <p><strong>Speciality:</strong> ${department}</p>
+                <p><strong>Service:</strong> ${service}</p>
+                <p><strong>State:</strong> ${state}</p>
+                <p><strong>Challenges:</strong> ${challenges}</p>
+                <p><strong>Estimated Monthly Collection:</strong> $${estimatedCollection}</p>
+                <p><strong>Message:</strong> ${message}</p>
+            `;
+
+            // Set up nodemailer transport
+            const transporter = nodemailer.createTransport({
+                service: 'gmail',
+                auth: {
+                    user: 'medifybill@gmail.com', // Use your email
+                    pass: 'wevn ctmd sndn spoe'   // Use your email password or app password
+                }
+            });
+
+            // Send the email
+            const mailOptions = {
+                from: email,
+                to: 'info@medifybill.com', // Recipient email
+                subject: 'New Appointment Request',
+                html: emailContent
+            };
+
+            transporter.sendMail(mailOptions, (error, info) => {
+                if (error) {
+                    console.log(error);
+                    res.status(500).json({ error: 'Failed to send email' });
+                    return;
+                }
+
+                res.status(200).json({ message: 'Appointment request sent successfully.' });
+            });
+        });
+    } else {
+        res.status(405).json({ error: 'Method Not Allowed' });
+    }
+};
+
+*/
 /*import nodemailer from 'nodemailer';
 import { IncomingForm } from 'formidable';
 
